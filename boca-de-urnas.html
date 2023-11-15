@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boca de Urnas Ballotage</title>
+    <title>Boca de Urnas</title>
 
     <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
-        .balotage {
+        .cuenta {
             margin: auto;
             background-color: darkturquoise;
             height: 200px;
@@ -85,7 +85,7 @@
             }
 
             return (
-                <div className="balotage">
+                <div className="cuenta">
                     <div className="candidato">
                         <p>{candidato}</p>
                     </div>
@@ -100,12 +100,12 @@
             )
         }
 
-        const candidatos = ['Javier Milei', 'Sergio Massa']
+        const candidatos = ["Candidato 1", "Candidato 2"];
 
         function App() {
             return (
                 <>
-                    <p className='titulo'>Boca de Urnas Ballotage</p>
+                    <p className='titulo'>Boca de Urnas</p>
                     <ul>
                         {candidatos.map((candidato) => {
                             return (
